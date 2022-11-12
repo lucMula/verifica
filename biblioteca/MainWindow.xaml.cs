@@ -24,5 +24,47 @@ namespace biblioteca
         {
             InitializeComponent();
         }
+        Biblioteca biblioteca;
+        Libro libro1;
+        private void btnLibro_Click(object sender, RoutedEventArgs e)
+        {
+            libro1 = new Libro(txtAutore.Text, txtTitolo.Text, int.Parse(txtannoDiPubblicazione.Text), txtEditore.Text, int.Parse(txtNumeroDiPagine.Text));
+
+        }
+
+        private void btnToString_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(libro1.toString());
+        }
+
+        private void btnTempoDiLettura_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(libro1.readingTime() + "h");
+        }
+
+        private void btnBliblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            biblioteca = new Biblioteca(txtNome.Text, txtIndirizzo.Text, int.Parse(txtOraA.Text), int.Parse(txtOraC.Text));
+        }
+
+        private void btnAggiungi_Click(object sender, RoutedEventArgs e)
+        {
+            biblioteca.Aggiungi();
+        }
+
+        private void btnCercaTitolo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(biblioteca.CercaTitolo( txtCercaTitolo.Text));
+        }
+
+        private void btnNumeroLibri_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(biblioteca.numeroDilibriTotali());
+        }
+
+        private void btnCercaAutore_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(biblioteca.ricercaLibriAutore(txtCercaAutore.Text));
+        }
     }
 }

@@ -7,6 +7,36 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Margin="95,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Margin="95,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtannoDiPubblicazione" HorizontalAlignment="Left" Margin="95,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Margin="95,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNumeroDiPagine" HorizontalAlignment="Left" Margin="95,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="autore" HorizontalAlignment="Left" Margin="95,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="titolo" HorizontalAlignment="Left" Margin="95,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="annoDiPubblicazione" HorizontalAlignment="Left" Margin="95,108,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label Content="editore" HorizontalAlignment="Left" Margin="95,149,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="numeroDiPagine" HorizontalAlignment="Left" Margin="95,191,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLibro" Content="crea libro" HorizontalAlignment="Left" Margin="36,45,0,0" VerticalAlignment="Top" Click="btnLibro_Click"/>
+        <Button x:Name="btnToString" Content="to string" HorizontalAlignment="Left" Margin="36,85,0,0" VerticalAlignment="Top" Click="btnToString_Click"/>
+        <Button x:Name="btnTempoDiLettura" Content="tempo lettura" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Click="btnTempoDiLettura_Click"/>
+        <Button x:Name="btnBliblioteca" Content="crea biblioteca" HorizontalAlignment="Left" Margin="289,45,0,0" VerticalAlignment="Top" Click="btnBliblioteca_Click"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="413,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtIndirizzo" HorizontalAlignment="Left" Margin="413,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtOraA" HorizontalAlignment="Left" Margin="413,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtOraC" HorizontalAlignment="Left" Margin="413,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="nome" HorizontalAlignment="Left" Margin="413,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="indirizzo" HorizontalAlignment="Left" Margin="413,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="oraApertura" HorizontalAlignment="Left" Margin="415,104,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="ora chiusura" HorizontalAlignment="Left" Margin="421,149,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAggiungi" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="290,84,0,0" VerticalAlignment="Top" Click="btnAggiungi_Click"/>
+        <Button x:Name="btnCercaTitolo" Content="CercaTitolo" HorizontalAlignment="Left" Margin="281,211,0,0" VerticalAlignment="Top" Click="btnCercaTitolo_Click"/>
+        <TextBox x:Name="txtCercaTitolo" HorizontalAlignment="Left" Margin="389,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnNumeroLibri" Content="NumeroLibri" HorizontalAlignment="Left" Margin="290,251,0,0" VerticalAlignment="Top" Click="btnNumeroLibri_Click"/>
+        <Button x:Name="btnCercaAutore" Content="CercaAutore" HorizontalAlignment="Left" Margin="304,291,0,0" VerticalAlignment="Top" Click="btnCercaAutore_Click"/>
+        <TextBox x:Name="txtCercaAutore" HorizontalAlignment="Left" Margin="433,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="autore" HorizontalAlignment="Left" Margin="430,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="titolo" HorizontalAlignment="Left" Margin="362,186,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
